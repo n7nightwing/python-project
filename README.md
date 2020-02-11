@@ -51,3 +51,5 @@ KF:
 - base.html
 - movie_list.html
 - director_list.html 
+- movie_detail.html
+- director_detail.html
