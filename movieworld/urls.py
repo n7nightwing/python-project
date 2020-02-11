@@ -12,4 +12,5 @@ urlpatterns = [
     path('directors/new', views.director_create, name='director_create'),
     path('directors/<int:pk>/edit', views.director_edit, name='director_edit'),
     path('directors/<int:pk>/delete', views.director_delete, name='director_delete'),    
+    path('movies/<int:pk>/edit', views.movie_edit, name='movie_edit'),
 ]
