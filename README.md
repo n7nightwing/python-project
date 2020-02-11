@@ -26,7 +26,10 @@ Muhammad
 - create urls
 - create HTML templates
 
--Create
--Read
--Update
--Delete
+- Create
+- Read
+- Update
+- Delete 
+
+KF:
+1. created forms.py
