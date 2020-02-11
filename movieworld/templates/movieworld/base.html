@@ -14,7 +14,7 @@
     <h1>Movie World</h1>
     <nav>
         <a href="{% url 'movie_list' %}">Movies</a>
-        <a href="/">Directors</a>
+        <a href="{% url 'director_list' %}">Directors</a>
 
     </nav>
     {% block content %}{% endblock %}
