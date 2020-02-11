@@ -5,7 +5,7 @@ class DirectorForm(forms.ModelForm):
 
     class Meta:
         model = Director
-        fields = ('name', 'nationality', 'birthday')
+        fields = ('name', 'nationality', 'birthday',)
 
 class MovieForm(forms.ModelForm):
 

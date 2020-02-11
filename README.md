@@ -33,3 +33,4 @@ Muhammad
 
 KF:
 1. created forms.py
+2. added create in views.py
