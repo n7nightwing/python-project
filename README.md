@@ -33,4 +33,9 @@ Muhammad
 
 KF:
 1. created forms.py
-2. added create in views.py
+2. added movie_create in views.py
+3. added director_create in views.py
+4. added movie_edit in views.py
+5. added director_edit in views.py
+6. added movie_delete in views.py
+7. added director_delete in views.py
