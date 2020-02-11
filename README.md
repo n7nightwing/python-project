@@ -68,4 +68,7 @@ KF:
 10. added paths to movieworld/urls.py
 
 ## Loose ends ..
-- 
+- movie details needs details
+- directordetails page is blank
+- styling
+- no delete functions
