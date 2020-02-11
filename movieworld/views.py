@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from .models import Movie, Director
 from .forms import DirectorForm, MovieForm
 
-
+print ('Call Views.py')
 def movie_list(request):
     movies = Movie.objects.all()
     return render(request, 'movieworld/movie_list.html', {'movies': movies})
