@@ -6,7 +6,7 @@ from .forms import DirectorForm, MovieForm
 
 def movie_list(request):
     movies = Movie.objects.all()
-    return render(request, 'tunr/artist_list.html', {'artists': artists})
+    return render(request, 'movieworld/movie_list.html', {'movies': movies})
 
 def movie_create(request):
     if request.method == 'POST':

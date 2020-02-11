@@ -5,16 +5,16 @@
 ## Models
 
 ## Movie:
-Genre
-Release date
-DirectorName = foreign key model
-Name
-Lead Actor/actress
+- 'name'
+- 'nationality'
+- 'birthday'
+- 'photo_url'
 
 ## Director:
-Origins
-movies= foreign key model
-birthday
+- 'name'
+- nationality'
+- 'birthday'
+- 'photo_url'
 
 Muhammad
 - Define a model
