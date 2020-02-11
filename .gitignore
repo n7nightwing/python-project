@@ -1,1 +1,3 @@
 env/
+movieworld/__pycache__/
+movieworld/migrations/__pycache__/
