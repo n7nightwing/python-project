@@ -11,5 +11,5 @@ class DirectorForm(forms.ModelForm):
 
     class Meta:
         model = Director
-        fields = ('name', 'nationality', 'birthday', 'photo_url',)
+        fields = ('name', 'nationality', 'birthday', 'bio', 'movies' 'photo_url',)
 

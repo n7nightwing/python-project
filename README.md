@@ -6,14 +6,18 @@
 
 ## Movie:
 - 'name'
-- 'nationality'
-- 'birthday'
+- 'genre'
+- 'release_date'
+- 'director_name' - foreignkey
+- 'stars'
 - 'photo_url'
 
 ## Director:
 - 'name'
-- nationality'
+- 'nationality'
 - 'birthday'
+- 'bio'
+- 'movies' - foreignkey
 - 'photo_url'
 
 Muhammad
