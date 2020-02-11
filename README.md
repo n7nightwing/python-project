@@ -1,5 +1,5 @@
 ## Python Project
-[Mockups] (https://xd.adobe.com/view/c03d03f3-5841-473b-4f38-242ef961504a-b60c/)
+- [Mockups](https://xd.adobe.com/view/c03d03f3-5841-473b-4f38-242ef961504a-b60c/)
 
 ## Movies and directors!
 
