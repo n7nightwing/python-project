@@ -53,3 +53,6 @@ KF:
 - director_list.html 
 - movie_detail.html
 - director_detail.html
+- movie_form.html
+- director_form.html
+9. added paths to movieworld/urls.py
