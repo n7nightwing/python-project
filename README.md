@@ -1,14 +1,14 @@
-### Python Project
-mockups: https://xd.adobe.com/view/c03d03f3-5841-473b-4f38-242ef961504a-b60c/
-
+## Python Project
+- [Mockups](https://xd.adobe.com/view/c03d03f3-5841-473b-4f38-242ef961504a-b60c/)
 
 ## Movies and directors!
 
-The purpose of this app is to show off our favorite movies, and the brilliant minds behind them! Featured will be movies with brief details about them, and they will all be associated with the directors who made them possible!
+The purpose of this app is to show off our favorite movies and the brilliant minds behind them! Featured will be movies with brief details about them, and they will all be associated with the directors who made them possible!
 
 ## Models
 
-## Movie:
+### Movie:
+Fields:
 - 'name'
 - 'genre'
 - 'release_date'
@@ -16,7 +16,8 @@ The purpose of this app is to show off our favorite movies, and the brilliant mi
 - 'synopsis'
 - 'photo_url'
 
-## Director:
+### Director:
+Fields:
 - 'name'
 - 'nationality'
 - 'birthday'
@@ -24,7 +25,7 @@ The purpose of this app is to show off our favorite movies, and the brilliant mi
 - 'movies' - foreignkey
 - 'photo_url'
 
-Muhammad
+## Completed Tasks:
 - Define a model
 - migrate
 
@@ -33,7 +34,6 @@ Muhammad
 - create a view
 - create urls
 - create HTML templates
-
 - Create
 - Read
 - Update
@@ -53,3 +53,10 @@ KF:
 - director_list.html 
 - movie_detail.html
 - director_detail.html
+- movie_form.html
+- director_form.html
+9. CSS: movieworld/static/css/movieworld.css
+10. added paths to movieworld/urls.py
+
+## Loose ends ..
+- 

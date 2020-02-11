@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MovieWorld</title>
-    <link rel="stylesheet" href="{% static 'css/tunr.css' %}">
+    <link rel="stylesheet" href="{% static 'css/movieworld.css' %}">
 </head>
 
 <body>
     <h1>Movie World</h1>
     <nav>
         <a href="{% url 'movie_list' %}">Movies</a>
-        <a href="/">Directors</a>
+        <a href="{% url 'director_list' %}">Directors</a>
 
     </nav>
     {% block content %}{% endblock %}
