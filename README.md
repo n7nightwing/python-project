@@ -5,6 +5,15 @@
 
 The purpose of this app is to show off our favorite movies and the brilliant minds behind them! Featured will be movies with brief details about them, and they will all be associated with the directors who made them possible!
 
+## Installation and getting started
+1. fork and clone this repository.
+2. initialize the virtualenv (source .env/bin/activate)
+3. make sure django is installed (pip install django)
+4. create database with name (movieworld), and a user that has access to that database.
+5. Update settings.py with database information.
+6. Run migrations "python manage.py migrate"
+7. Happy coding!
+
 ## Models
 
 ### Movie:
