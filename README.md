@@ -1,6 +1,10 @@
 ### Python Project
+mockups: https://xd.adobe.com/view/c03d03f3-5841-473b-4f38-242ef961504a-b60c/
+
 
 ## Movies and directors!
+
+The purpose of this app is to show off our favorite movies, and the brilliant minds behind them! Featured will be movies with brief details about them, and they will all be associated with the directors who made them possible!
 
 ## Models
 
