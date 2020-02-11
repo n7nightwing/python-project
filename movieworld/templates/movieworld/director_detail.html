@@ -4,9 +4,8 @@
 <h2>{{ director.name }} <a href="">(edit)</a></h2>
 <h4>{{ director.nationality }}</h4>
 <img src="{{ director.photo_url }}" alt="" class="director-photo" />
-
-<!-- <h3>Movies <a href="{% 'director_update' pk=director.pk %">(+)</a></h3> -->
-<!-- <ul>
+<h3>Songs <a href="{% 'director_update' pk=director.pk %">(+)</a></h3>
+<ul>
   {% for song in director.movies.all %}
     <li>
       <a href="{% url 'movie_detail' pk=movie.pk %}">
@@ -15,5 +14,5 @@
     </li>
   {% endfor %}
 
-</ul> -->
+</ul>
 {% endblock %}

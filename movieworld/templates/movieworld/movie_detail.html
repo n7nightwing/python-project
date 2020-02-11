@@ -1,0 +1,8 @@
+{% extends 'movieworld/base.html' %}
+{% block content %}
+
+<h2>{{ movie.name }} <a href="{% url 'movie_edit' pk=movie.pk %}">(edit)</a></h2>
+<h3>By: {{ movie.director.name }}</h3>
+
+<!-- Album: {{ movie.album }} -->
+{% endblock %}
