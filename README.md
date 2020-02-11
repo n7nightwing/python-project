@@ -9,7 +9,7 @@
 - 'genre'
 - 'release_date'
 - 'director_name' - foreignkey
-- 'stars'
+- 'synopsis'
 - 'photo_url'
 
 ## Director:

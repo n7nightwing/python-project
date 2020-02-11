@@ -8,6 +8,10 @@ def movie_list(request):
     movies = Movie.objects.all()
     return render(request, 'movieworld/movie_list.html', {'movies': movies})
 
+def movie_detail(request, pk):
+    movie = Movie.objects.get(id=pk)
+    return render(request, 'movieworld/movie_detail.html', {'movie': movie})
+
 def movie_create(request):
     if request.method == 'POST':
         form = MovieForm(request.POST)
@@ -36,6 +40,10 @@ def movie_delete(request, pk):
 def director_list(request):
     directors = Director.objects.all()
     return render(request, 'movieworld/director_list.html', {'directors': directors})
+
+def director_detail(request, pk):
+    director = Director.objects.get(id=pk)
+    return render(request, 'movieworld/director_detail.html', {'director': director})
 
 def director_create(request):
     if request.method == 'POST':
