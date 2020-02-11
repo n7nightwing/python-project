@@ -1,0 +1,13 @@
+{% extends 'tunr/base.html' %}
+{% block content %}
+
+<h2>Movies</h2>
+<ul>
+  {% for movie in movies %}
+  <li>
+    <a href="">{{ movie.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

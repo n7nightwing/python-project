@@ -43,3 +43,7 @@ KF:
 5. added director_edit in views.py
 6. added movie_delete in views.py
 7. added director_delete in views.py
+8. created templates folder:
+- base.html
+- movie_list.html
+- director_list.html 
