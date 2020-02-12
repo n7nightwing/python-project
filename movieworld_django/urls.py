@@ -19,4 +19,5 @@ print('URL Admin')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('movieworld.urls')),
+    path('', include('accounts.urls')),
 ]
