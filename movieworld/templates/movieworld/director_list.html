@@ -1,9 +1,13 @@
 {% extends 'movieworld/base.html' %}
 {% block content %}
 
-<h2>{{ director.name }} <a href="">(edit)</a></h2>
-<h4>{{ director.nationality }}</h4>
-<img src="{{ director.photo_url }}" alt="" class="director-photo" />
+<h2>Directors<a href="{% url 'director_create' %}"> (add)</a></h2>
+
+{% for director in directors %}
+  <h3>{{ director.name }} <a href="">(edit)</a></h3>
+  <h4>{{ director.nationality }}</h4>
+  <img src="{{ director.photo_url }}" alt="" class="director-photo" />
+{% endfor %}
 
 <!-- <h3>Movies <a href="{% 'director_update' pk=director.pk %">(+)</a></h3> -->
 <!-- <ul>
