@@ -1,12 +1,13 @@
 {% extends 'movieworld/base.html' %}
 {% block content %}
 
-<h2>{{ director.name }} <a href="">(edit)</a></h2>
+<h2>{{ director.director_name }}<a href="{% url 'director_edit' pk=director.pk %}"> (edit)</a></h2>
 <h4>{{ director.nationality }}</h4>
 <img src="{{ director.photo_url }}" alt="" class="director-photo" />
-<h3>Songs <a href="{% 'director_update' pk=director.pk %">(+)</a></h3>
+<h4>{{ director.bio }}</h4><br>
+<h3>Movies<a href="{% 'director_update' pk=director.pk %"> (add)</a></h3>
 <ul>
-  {% for song in director.movies.all %}
+  {% for movie in director.movies.all %}
     <li>
       <a href="{% url 'movie_detail' pk=movie.pk %}">
         {{ movie.title }}-{{ movie.album }}

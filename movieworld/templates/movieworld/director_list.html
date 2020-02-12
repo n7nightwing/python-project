@@ -4,8 +4,8 @@
 <h2>Directors<a href="{% url 'director_create' %}"> (add)</a></h2>
 
 {% for director in directors %}
-  <h3>{{ director.name }} <a href="">(edit)</a></h3>
-  <h4>{{ director.nationality }}</h4>
+  <h3><a href="{% url 'director_detail' pk=director.id %}">{{ director.director_name }}</a></h3>
+  
   <img src="{{ director.photo_url }}" alt="" class="director-photo" />
 {% endfor %}
 

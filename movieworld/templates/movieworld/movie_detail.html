@@ -2,7 +2,11 @@
 {% block content %}
 
 <h2>{{ movie.name }} <a href="{% url 'movie_edit' pk=movie.pk %}">(edit)</a></h2>
-<h3>By: {{ movie.director.name }}</h3>
+<h3>Director: {{ movie.director.director_name }}</h3>
+<img src="{{movie.photo_url}}" alt="">
 
-<!-- Album: {{ movie.album }} -->
+<h3>{{movie.genre}}</h3>
+<h3>Released: {{movie.release_date}}</h3>
+<h4>{{movie.synopsis}}</h4>
+
 {% endblock %}
