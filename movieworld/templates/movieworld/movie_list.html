@@ -1,13 +1,14 @@
 {% extends 'movieworld/base.html' %}
 {% block content %}
 
-<h2>Movies</h2>
-<ul>
+<br><h2>Movies<a href="{% url 'movie_create' %}"> (add)</a></h2>
+
   {% for movie in movies %}
-  <li>
-    <a href="{% url 'movie_detail' pk=movie.pk %}"">{{ movie.name }}</a>
-  </li>
+  <h3>
+    <a href="{% url 'movie_detail' pk=movie.pk %}">
+    <img src="{{ movie.photo_url }}" alt="" class="movie-photo" style="float: left; overflow: auto; padding-right: 5px; height: 37px; width: 30px"/>
+      {{ movie.name }}</a>
+  </h3>
   {% endfor %}
-</ul>
 
 {% endblock %}

@@ -1,5 +1,12 @@
-{% extends 'movieworld/base.html' %} {% block content %}
-<h1>New Director</h1>
+{% extends 'movieworld/base.html' %} 
+{% block content %}
+
+{% if '/new' in request.path %}
+  <br><br><h1>New Director</h1>
+{% elif '/edit' in request.path %}
+  <br><br><h1>Edit Director</h1>
+{% endif %}
+
 <form method="POST" class="director-form">
     <!-- csrf token is a security thing -->
   {% csrf_token %} 

@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 from .models import Movie, Director
@@ -12,6 +13,7 @@ def movie_detail(request, pk):
     movie = Movie.objects.get(id=pk)
     return render(request, 'movieworld/movie_detail.html', {'movie': movie})
 
+
 def movie_create(request):
     if request.method == 'POST':
         form = MovieForm(request.POST)
@@ -21,6 +23,7 @@ def movie_create(request):
     else:
         form = MovieForm()
     return render(request, 'movieworld/movie_form.html', {'form': form})
+
 
 def movie_edit(request, pk):
     movie = Movie.objects.get(pk=pk)
@@ -33,6 +36,7 @@ def movie_edit(request, pk):
         form = MovieForm(instance=movie)
     return render(request, 'movieworld/movie_form.html', {'form': form})
 
+@login_required
 def movie_delete(request, pk):
     Movie.objects.get(id=pk).delete()
     return redirect('movie_list')
@@ -66,6 +70,7 @@ def director_edit(request, pk):
         form = DirectorForm(instance=director)
     return render(request, 'movieworld/director_form.html', {'form': form})
 
+@login_required
 def director_delete(request, pk):
     Director.objects.get(id=pk).delete()
     return redirect('director_list')
