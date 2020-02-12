@@ -3,8 +3,8 @@
 
 <h2>{{ director.director_name }}<a href="{% url 'director_edit' pk=director.pk %}"> (edit)</a></h2>
 <h4>{{ director.nationality }}</h4>
-<img src="{{ director.photo_url }}" alt="" class="director-photo" />
-<h4>{{ director.bio }}</h4><br>
+<img src="{{ director.photo_url }}" alt="" class="director-photo" style="height: 200px; width: 200px;"/>
+<h4 style="font-weight: normal">{{ director.bio }}</h4><br>
 <h3>Movies<a href="{% 'director_update' pk=director.pk %"> (add)</a></h3>
 <ul>
   {% for movie in director.movies.all %}

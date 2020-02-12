@@ -4,9 +4,13 @@
 <h2>Directors<a href="{% url 'director_create' %}"> (add)</a></h2>
 
 {% for director in directors %}
-  <h3><a href="{% url 'director_detail' pk=director.id %}">{{ director.director_name }}</a></h3>
   
-  <img src="{{ director.photo_url }}" alt="" class="director-photo" />
+  <h3>
+    <a href="{% url 'director_detail' pk=director.id %}">
+      <img src="{{ director.photo_url }}" alt="" class="director-photo" style="float: left; overflow: auto; padding-right: 5px; height: 30px; width: 30px"/>
+        {{ director.director_name }}
+    </a>
+  </h3>
 {% endfor %}
 
 <!-- <h3>Movies <a href="{% 'director_update' pk=director.pk %">(+)</a></h3> -->
