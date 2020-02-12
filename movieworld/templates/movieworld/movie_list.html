@@ -1,7 +1,7 @@
 {% extends 'movieworld/base.html' %}
 {% block content %}
 
-<h2>Movies</h2>
+<h2>Movies<a href="{% url 'movie_create' %}"> (add)</a></h2>
 <ul>
   {% for movie in movies %}
   <li>
