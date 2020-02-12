@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'movieworld',
-        'USER': 'movieworlduser',
-        'PASSWORD': '123',
+        'USER': 'movieuser',
+        'PASSWORD': 'movieworld',
         'HOST': 'localhost'
 
 
