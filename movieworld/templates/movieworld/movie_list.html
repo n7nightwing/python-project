@@ -6,7 +6,7 @@
   {% for movie in movies %}
   <h3>
     <a href="{% url 'movie_detail' pk=movie.pk %}">
-    <img src="{{ movie.photo_url }}" alt="" class="movie-photo" style="float: left; overflow: auto; padding-right: 5px; height: 30px; width: 30px"/>
+    <img src="{{ movie.photo_url }}" alt="" class="movie-photo" style="float: left; overflow: auto; padding-right: 5px; height: 37px; width: 30px"/>
       {{ movie.name }}</a>
   </h3>
   {% endfor %}
