@@ -5,7 +5,7 @@ from django.db import models
 class Director(models.Model):
     director_name = models.CharField(max_length=100)
     nationality = models.CharField(max_length=100, default="USA")
-    birthday = models.TextField()
+    birthday = models.CharField(max_length=50)
     photo_url = models.CharField(max_length=256, default='No Image Available')
     bio = models.CharField(max_length=500, default='No information available' )
     def __str__(self):
