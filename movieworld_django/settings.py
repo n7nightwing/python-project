@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -37,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'movieworld'
+    'movieworld',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'movieworld',
-        'USER': 'movieworlduser',
-        'PASSWORD': '123',
+        'USER': 'movieuser',
+        'PASSWORD': 'movieworld',
         'HOST': 'localhost'
 
 
